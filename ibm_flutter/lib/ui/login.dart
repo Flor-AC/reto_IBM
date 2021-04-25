@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reto_imb/ui/scan_face.dart';
-import 'package:reto_imb/ui/scan_ine.dart';
+import 'package:reto_imb/ui/profile.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -34,8 +33,10 @@ class Login extends StatelessWidget {
                     decoration: InputDecoration(border: OutlineInputBorder()),
                   ),
                   SizedBox(height: 20),
-                  ElevatedButton(
-                      onPressed: () => {},
+                  RaisedButton(
+                      color: Color.fromRGBO(151, 0, 93, 1),
+                      textColor: Colors.white,
+                      onPressed: () => navToProfile(context),
                       child: Text('INGRESAR')),
                 ],
               ),
@@ -43,6 +44,12 @@ class Login extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  void navToProfile(BuildContext context) {
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (ctx) => Profile()),
     );
   }
 }

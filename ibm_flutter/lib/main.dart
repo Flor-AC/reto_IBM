@@ -11,11 +11,14 @@ class Ibm extends StatelessWidget {
     return MaterialApp(
       title: 'Ibm challenge',
       theme: ThemeData(
-        primarySwatch: Colors.brown,
-        accentColor: Colors.brown,
-        cursorColor: Colors.brown,
+        primaryColor: Color.fromRGBO(151, 0, 93, 1),
+        primaryColorLight: Color.fromRGBO(204, 70, 138, 1),
+        primaryColorDark: Color.fromRGBO(100, 0, 51, 1),
+        accentColor: Color.fromRGBO(151, 0, 93, 1),
+        cursorColor: Color.fromRGBO(151, 0, 93, 1),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      debugShowCheckedModeBanner: false,
       home: Login(),
     );
   }

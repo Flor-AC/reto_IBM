@@ -20,3 +20,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/facebook.png
+    - assets/images/instagram.png
+    - assets/images/twitter.png
