@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reto_imb/ui/profile.dart';
+import 'package:reto_imb/ui/scan_ine.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -36,7 +36,7 @@ class Login extends StatelessWidget {
                   RaisedButton(
                       color: Color.fromRGBO(151, 0, 93, 1),
                       textColor: Colors.white,
-                      onPressed: () => navToProfile(context),
+                      onPressed: () => navToScan(context),
                       child: Text('INGRESAR')),
                 ],
               ),
@@ -47,9 +47,9 @@ class Login extends StatelessWidget {
     );
   }
 
-  void navToProfile(BuildContext context) {
+  void navToScan(BuildContext context) {
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (ctx) => Profile()),
+      MaterialPageRoute(builder: (ctx) => ScanIne()),
     );
   }
 }

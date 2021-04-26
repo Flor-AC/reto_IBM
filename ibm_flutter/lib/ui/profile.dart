@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reto_imb/ui/scan_face.dart';
 import 'package:reto_imb/ui/widgets/person_actions_card.dart';
 import 'package:reto_imb/ui/widgets/profile_header.dart';
 
@@ -27,7 +28,7 @@ class Profile extends StatelessWidget {
                 child: RaisedButton(
                   color: Color.fromRGBO(151, 0, 93, 1),
                   textColor: Colors.white,
-                  onPressed: () => {},
+                  onPressed: () => navToScan(context),
                   child: Text('EMPEZAR A VOTAR'),
                 ),
               ),
@@ -63,6 +64,12 @@ class Profile extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  void navToScan(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (ctx) => ScanFace()),
     );
   }
 }
