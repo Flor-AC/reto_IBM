@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reto_imb/ui/person_detail.dart';
 
 class PersonActionsCard extends StatelessWidget {
   PersonActionsCard(this.avatarUrl, this.title, this.subtitle);
@@ -68,12 +69,18 @@ class PersonActionsCard extends StatelessWidget {
               style: ButtonStyle(
                 side: MaterialStateProperty.all(BorderSide(color: Colors.blue)),
               ),
-              onPressed: () => {},
+              onPressed: () => navigateDetails(context),
               child: Text('VER MÁS'),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  void navigateDetails(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (ctx) => PersonDetail()),
     );
   }
 }
