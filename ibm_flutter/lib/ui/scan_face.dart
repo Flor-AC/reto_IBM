@@ -1,7 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:reto_imb/ui/widgets/live_camera.dart';
 import 'package:reto_imb/ui/widgets/person_card.dart';
 
 class ScanFace extends StatefulWidget {
@@ -11,15 +10,32 @@ class ScanFace extends StatefulWidget {
 
 class _ScanFaceState extends State<ScanFace> {
   CameraDescription camera;
+  CameraController controller;
+  Future<void> initController;
 
   @override
   void initState() {
     initCamera();
+
     super.initState();
   }
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    if (camera != null) {
+      controller = CameraController(
+        camera,
+        ResolutionPreset.medium,
+      );
+      initController = controller.initialize();
+    }
+
     return Scaffold(
       appBar: AppBar(title: Text('Votar')),
       body: SingleChildScrollView(
@@ -40,7 +56,16 @@ class _ScanFaceState extends State<ScanFace> {
                         'No se ha detectado una camara en su dispositivo',
                       ),
                     )
-                  : LiveCamera(camera),
+                  : FutureBuilder(
+                      future: initController,
+                      builder: (context, snapshot) {
+                        if (snapshot.connectionState == ConnectionState.done) {
+                          return CameraPreview(controller);
+                        } else {
+                          return Center(child: CircularProgressIndicator());
+                        }
+                      },
+                    ),
             ),
             SizedBox(height: 40),
             Text(
@@ -74,9 +99,10 @@ class _ScanFaceState extends State<ScanFace> {
             RaisedButton(
               color: Color.fromRGBO(151, 0, 93, 1),
               textColor: Colors.white,
-              onPressed: () => {},
+              onPressed: takePicture,
               child: Text('VOTAR'),
-            )
+            ),
+            SizedBox(height: 20),
           ],
         ),
       ),
@@ -87,5 +113,17 @@ class _ScanFaceState extends State<ScanFace> {
     WidgetsFlutterBinding.ensureInitialized();
     final cameras = await availableCameras();
     setState(() => camera = cameras[1]);
+  }
+
+  Future<void> takePicture() async {
+    try {
+      await initController;
+      final image = await controller.takePicture();
+
+      print('-------------------------- Image Path --------------------------');
+      print(image.path);
+    } catch (e) {
+      print(e);
+    }
   }
 }
