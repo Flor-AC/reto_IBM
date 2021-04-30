@@ -41,6 +41,11 @@ class _ScanFaceState extends State<ScanFace> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+             SizedBox(height: 20),
+            Text(
+              'Boleta No. 1234',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
             SizedBox(height: 20),
             Text(
               'Manten tu rostro enfocado en la pantalla',
@@ -69,7 +74,7 @@ class _ScanFaceState extends State<ScanFace> {
             ),
             SizedBox(height: 40),
             Text(
-              'Selecciona al cadidato que deseas',
+              'Selecciona al cadidato por el que deseas votar',
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 20),

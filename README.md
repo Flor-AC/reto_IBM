@@ -4,7 +4,7 @@ _Para este reto, se creara una aplicación movil que permitira despues de varios
 
 ## Comenzando 🚀
 
-La versión actual se encuentra en la sección `releases`.
+La versión actual se encuentra en la sección `master`.
 
 ## Construido con 🛠️
 ### Backend 🖥️
@@ -16,6 +16,10 @@ La versión actual se encuentra en la sección `releases`.
 
 * [Flutter](http://www.dropwizard.io/1.0.2/docs/) - Framework de componentes
 * [Dart](https://maven.apache.org/) - Lenguaje de programación utilizado
+
+### IBM Cloud ☁️
+
+* Se hizo uso de la nube de IBM para la realización de este proyecto usando Watson Studio, implementando el servicio de Visual Recognition para analizar las credenciales del INE y la comprobación de la cara al votar
 
 
 ## Expresiones de Gratitud 🎁
