@@ -43,6 +43,10 @@ https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantal
 
 ![Captura5](https://user-images.githubusercontent.com/42681133/116736985-4283ad80-a9b6-11eb-99cd-732313ad5d56.png)
 
+* Finalmente para realizar la votación se pedira activar la ubicación, camara encendida en el momento, microfono para garantizar un voto seguro
+
+![Captura6](https://user-images.githubusercontent.com/42681133/116744766-5b915c00-a9c0-11eb-8faa-183adfbd62fb.png)
+
 
 ## Expresiones de Gratitud 🎁
 
