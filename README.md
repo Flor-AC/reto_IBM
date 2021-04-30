@@ -21,11 +21,12 @@ https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantal
 
 * Se hizo uso de la nube de IBM para la realización de este proyecto usando Watson Studio, implementando el servicio de Visual Recognition para analizar las credenciales del INE y la comprobación de la cara al votar
 
-![Inicio de sesión]
-(https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantalla/Captura1.png)
 
 ## Funcionamiento 🤳
 * Al iniciar se usaran datos como CURP, IDMEX, Nombre completo para realizar el inicio de sesión, los cuales serán comparados con la base de datos del INE
+
+(https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantalla/Captura1.png)
+
 
 
 ## Expresiones de Gratitud 🎁
