@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reto_imb/ui/scan_face.dart';
+import 'package:reto_imb/ui/widgets/district_header.dart';
 import 'package:reto_imb/ui/widgets/person_actions_card.dart';
 import 'package:reto_imb/ui/widgets/profile_header.dart';
 
@@ -35,6 +36,7 @@ class Profile extends StatelessWidget {
       builder: (_) => buildAlertDialog(),
     );
   }
+  
     return Scaffold(
       appBar: AppBar(
         title: Text('E - Voting'),
@@ -50,7 +52,15 @@ class Profile extends StatelessWidget {
                 'Romero Reyes',
                 'https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos-810x540.jpg',
               ),
-              SizedBox(height: 40),
+               SizedBox(height: 20),
+               Chip(
+                avatar: CircleAvatar(
+                backgroundColor: Theme.of(context).accentColor,
+                child: Text('D'),
+                ),
+                label: Text('Orizaba, Veracruz'),
+                ),
+              SizedBox(height: 20),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
                 width: double.infinity,

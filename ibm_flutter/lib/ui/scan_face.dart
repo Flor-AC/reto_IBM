@@ -26,6 +26,8 @@ class _ScanFaceState extends State<ScanFace> {
     super.dispose();
   }
 
+  final snackBar = SnackBar(content: Text('Yay! A SnackBar!'));
+
   @override
   Widget build(BuildContext context) {
     if (camera != null) {
@@ -151,6 +153,7 @@ class _ScanFaceState extends State<ScanFace> {
   }
 
   Future<void> takePicture() async {
+    Scaffold.of(context).showSnackBar(snackBar);
     try {
       await initController;
       final image = await controller.takePicture();

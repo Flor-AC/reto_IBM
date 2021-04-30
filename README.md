@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantal
 
 ![Captura3](https://user-images.githubusercontent.com/42681133/116736851-12d4a580-a9b6-11eb-9816-8a6c4b8f8ba0.png)
 
-* Al seleccionar en "ver más" podremos obtener información sobre la candidatura con las propuestas.
+* Al seleccionar en "ver más" podremos obtener información sobre la candidaturas.
 
 ![Captura4](https://user-images.githubusercontent.com/42681133/116736947-34ce2800-a9b6-11eb-8dd2-1ebc3a12bfa9.png)
 
