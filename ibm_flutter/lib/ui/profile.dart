@@ -10,7 +10,7 @@ class Profile extends StatelessWidget {
     return AlertDialog(
       title: Text('Terminos y condiciones'),
       content:
-          Text("Se usarán los servicios de ubicación, camara y microfono, los datos recopilados no seran almacenados y solo se usaran con fines de verificación"),
+          Text("Se usarán los servicios de ubicación, camara y microfono. \nLos datos recopilados no seran almacenados y solo se usaran con fines de verificación"),
       actions: [
         FlatButton(
             child: Text("Aceptar"),

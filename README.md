@@ -23,11 +23,11 @@ https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantal
 
 
 ## Funcionamiento 🤳
-* Al iniciar se usaran datos como CURP, IDMEX, Nombre completo para realizar el inicio de sesión, los cuales serán comparados con la base de datos del INE.
+* Al iniciar se usaran datos como CURP y IDMEX para realizar el inicio de sesión, los cuales serán comparados con la base de datos del INE y verificaran que coincidan.
 
-![Captura1](https://user-images.githubusercontent.com/42681133/116736628-c12c1b00-a9b5-11eb-8718-bed0bfb4c0ab.png)
+![Screenshot_20210430_170022](https://user-images.githubusercontent.com/42681133/116758516-d44ee300-a9d5-11eb-8860-e3b96c722757.png)
 
-* Posteriormente se solicitara el escaneo de la INE de la parte de adelante y de atras, para poder realizar una confirmación de identidad.
+* Posteriormente se solicitara el escaneo de la INE de la parte de adelante, para poder realizar una confirmación de identidad, el cual será comparado con un modelo en IBM Cloud.
 
 ![Captura2](https://user-images.githubusercontent.com/42681133/116736755-ec166f00-a9b5-11eb-8ee7-a38c5f8b6f25.png)
 
