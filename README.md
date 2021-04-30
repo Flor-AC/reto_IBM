@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantal
 ## Funcionamiento 🤳
 * Al iniciar se usaran datos como CURP, IDMEX, Nombre completo para realizar el inicio de sesión, los cuales serán comparados con la base de datos del INE
 
-(https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantalla/Captura1.png)
+![Captura1](https://user-images.githubusercontent.com/42681133/116736628-c12c1b00-a9b5-11eb-8718-bed0bfb4c0ab.png)
 
 
 
