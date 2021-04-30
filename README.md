@@ -8,7 +8,7 @@ La versión actual se encuentra en la sección `master`.
 
 ## Construido con 🛠️
 ### Backend 🖥️
-
+https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantalla/Captura1.png
 * [Python 3.7](https://www.python.org/) - Lenguaje de programación
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Herramienta usada para crear el servidor
 
@@ -20,6 +20,12 @@ La versión actual se encuentra en la sección `master`.
 ### IBM Cloud ☁️
 
 * Se hizo uso de la nube de IBM para la realización de este proyecto usando Watson Studio, implementando el servicio de Visual Recognition para analizar las credenciales del INE y la comprobación de la cara al votar
+
+![Inicio de sesión]
+(https://raw.githubusercontent.com/Flor-AC/reto_IBM/master/Capturas%20de%20pantalla/Captura1.png)
+
+## Funcionamiento 🤳
+* Al iniciar se usaran datos como CURP, IDMEX, Nombre completo para realizar el inicio de sesión, los cuales serán comparados con la base de datos del INE
 
 
 ## Expresiones de Gratitud 🎁
