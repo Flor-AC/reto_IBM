@@ -43,16 +43,6 @@ class Login extends StatelessWidget {
                     decoration: InputDecoration(border: OutlineInputBorder()),
                   ),
                   SizedBox(height: 10),
-                                    Text(
-                    'Ingrese su nombre completo',
-                    style: TextStyle(fontSize: 20),
-                    textAlign: TextAlign.center,
-                  ),
-                  SizedBox(height: 20),
-                  TextFormField(
-                    decoration: InputDecoration(border: OutlineInputBorder()),
-                  ),
-                  SizedBox(height: 10),
                   RaisedButton(
                       color: Color.fromRGBO(151, 0, 93, 1),
                       textColor: Colors.white,

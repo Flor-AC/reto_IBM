@@ -32,38 +32,6 @@ class PersonActionsCard extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             SizedBox(height: 15),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    width: 25,
-                    height: 25,
-                    child: Image.asset(
-                      'assets/images/facebook.png',
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    width: 25,
-                    height: 25,
-                    child: Image.asset(
-                      'assets/images/twitter.png',
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    width: 25,
-                    height: 25,
-                    child: Image.asset(
-                      'assets/images/instagram.png',
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-            ),
             SizedBox(height: 10),
             OutlinedButton(
               style: ButtonStyle(
